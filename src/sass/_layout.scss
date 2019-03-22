@@ -1,0 +1,29 @@
+.container{
+    max-width:120rem;
+    margin: 8rem auto;
+    background-color:var(--color-Grey-light-1);
+    box-shadow: var(--shadow-dark);
+
+    min-height:50rem;
+}
+
+.header{
+    height:7rem;
+    background-color: #fff;
+    border-bottom:var(--color-Grey-light-2);
+}
+
+.content{
+    display:flex;
+}
+
+.sidebar{
+    background:var(--color-Grey-dark-1);
+
+    flex: 0 0 18%; //flex-basis:18%; to define width of flex item
+}
+
+.hotel-view{
+    background-color:#fff;
+    flex: 1; // by setting flex = 1 we meant to grow the flex item as much as there is a space 
+}
