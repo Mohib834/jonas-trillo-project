@@ -13,6 +13,18 @@ module.exports = {
             {
                 test:/\.scss$/,
                 use:['style-loader','css-loader','sass-loader']
+            },
+            {
+                test:/\.(jpe?g|png|gif)$/,
+                use:'file-loader'
+            },
+            {
+                test:/\.html$/,
+                use:'html-loader' 
+            },
+            {
+                test:/.svg$/,
+                use:'svg-sprite-loader'
             }
         ]
     },
